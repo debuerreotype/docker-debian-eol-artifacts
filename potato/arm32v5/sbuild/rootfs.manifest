@@ -1,0 +1,81 @@
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Installed/Config-files/Unpacked/Failed-config/Half-installed
+|/ Err?=(none)/Hold/Reinst-required/X=both-problems (Status,Err: uppercase=bad)
+||/ Name           Version        Description
++++-==============-==============-============================================
+ii  adduser        3.11.1         Add users and groups to the system.
+ii  ae             962-26         Anthony's Editor -- a tiny full-screen edito
+ii  apt            0.3.19         Advanced front-end for dpkg
+ii  base-config    0.33.2         Debian base configuration package
+ii  base-files     2.2.0          Debian base system miscellaneous files
+ii  base-passwd    3.1.10         Debian Base System Password/Group Files
+ii  bash           2.03-6         The GNU Bourne Again SHell
+ii  bsdutils       2.10f-3        Basic utilities from 4.4BSD-Lite.
+ii  build-essentia 2              Informational list of build-essential packag
+ii  console-data   1999.08.29-11. Keymaps, fonts, charset maps, fallback table
+ii  console-tools  0.2.3-10.3     Linux console and font utilities.
+ii  console-tools- 0.2.3-10.3     Shared libraries for Linux console and font 
+ii  debconf        0.2.80.17      Debian configuration management system
+ic  debconf-tiny   0.2.80.17      Tiny subset of debconf for the base system
+ii  debianutils    1.13.3         Miscellaneous utilities specific to Debian.
+ii  diff           2.7-21         File comparison utilities
+ii  dpkg           1.6.15         Package maintenance system for Debian
+ii  e2fsprogs      1.18-3.0potato The EXT2 file system utilities and libraries
+ii  elvis-tiny     1.4-10         Tiny vi compatible editor for the base syste
+ii  fakeroot       0.4.4-4.1      Gives a fake root environment.
+ii  fbset          2.1-6          Framebuffer device maintenance program.
+ii  fdutils        5.3-3          Linux floppy utilities
+ii  fileutils      4.0l-8         GNU file management utilities.
+ii  findutils      4.1-40         utilities for finding files--find, xargs, an
+ii  ftp            0.10-3.1       The FTP client.
+ii  gettext-base   0.10.35-13     GNU Internationalization utilities for the b
+ii  grep           2.4.2-1        GNU grep, egrep and fgrep.
+ii  gzip           1.2.4-33.1     The GNU compression utility.
+ii  hostname       2.07           A utility to set/show the host name or domai
+ii  ldso           1.9.11-9       The Linux dynamic linker, library and utilit
+ii  libc6          2.1.3-20       GNU C Library: Shared libraries and Timezone
+ii  libdb2         2.4.14-2.7.7.1 The Berkeley database routines (run-time fil
+ii  libgdbmg1      1.7.3-26.2     GNU dbm database routines (runtime version).
+ii  libgpmg1       1.17.8-18.1    General Purpose Mouse Library [libc6]
+ii  libncurses4    4.2-9          Shared libraries for terminal handling
+ii  libncurses5    5.0-6.0potato2 Shared libraries for terminal handling
+ii  libnewt0       0.50-7         Not Erik's Windowing Toolkit - text mode win
+ii  libpam-modules 0.72-9         Pluggable Authentication Modules for PAM
+ii  libpam-runtime 0.72-9         Runtime support for the PAM library
+ii  libpam0g       0.72-9         Pluggable Authentication Modules library
+ii  libpopt0       1.4-1.1        lib for parsing cmdline parameters
+ii  libreadline4   4.1-1          GNU readline and history libraries, run-time
+ii  libstdc++2.10  2.95.2-13.1    The GNU stdc++ library
+ii  libwrap0       7.6-4          Wietse Venema's TCP wrappers library
+ii  locales        2.1.3-20       GNU C Library: National Language (locale) da
+ii  login          19990827-20    System login tools
+ii  makedev        2.3.1-46.2     Creates special device files in /dev.
+ii  mawk           1.3.3-5        a pattern scanning and text processing langu
+ii  modconf        0.2.26.14.1    Device Driver Configuration
+ii  modutils       2.3.11-13.1    Linux module utilities.
+ii  mount          2.10f-3        Tools for mounting and manipulating filesyst
+ii  ncurses-base   5.0-6.0potato2 Descriptions of common terminal types
+ii  ncurses-bin    5.0-6.0potato2 Terminal-related programs and man pages
+ii  netbase        3.18-4         Basic TCP/IP networking binaries
+ii  passwd         19990827-20    Change and administer password and group dat
+ii  perl-5.005     5.005.03-7.1   Larry Wall's Practical Extracting and Report
+ii  perl-5.005-bas 5.005.03-7.1   The Pathologically Eclectic Rubbish Lister
+ii  perl-base      5.004.05-1.1   Fake package assuring that one of the -base 
+ii  ppp            2.3.11-1.4     Point-to-Point Protocol (PPP) daemon.
+ii  pppconfig      2.0.5          A text menu based utility for configuring pp
+ii  procps         2.0.6-5        The /proc file system utilities.
+ii  pump           0.7.3-2        Simple DHCP/BOOTP client for 2.2.x kernels
+ii  sed            3.02-5         The GNU sed stream editor.
+ii  shellutils     2.0-7          The GNU shell programming utilities.
+ii  slang1         1.3.9-1        The S-Lang programming library - runtime ver
+ii  sysklogd       1.3-33.1       Kernel and system logging daemons
+ii  sysvinit       2.78-4         System-V like init.
+ii  tar            1.13.17-2      GNU tar
+ii  tasksel        1.0-10         New task packages selector
+ii  tcpd           7.6-4          Wietse Venema's TCP wrapper utilities
+ii  telnet         0.16-4potato.3 The telnet client.
+ii  textutils      2.0-2          The GNU text file processing utilities.
+ii  update         2.11-1         daemon to periodically flush filesystem buff
+ii  util-linux     2.10f-3        Miscellaneous system utilities.
+ii  whiptail       0.50-7         Displays user-friendly dialog boxes from she
+ii  xviddetect     0.3-4          XFree86 installation helper
