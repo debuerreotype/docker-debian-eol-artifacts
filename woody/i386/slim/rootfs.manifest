@@ -1,0 +1,105 @@
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Installed/Config-files/Unpacked/Failed-config/Half-installed
+|/ Err?=(none)/Hold/Reinst-required/X=both-problems (Status,Err: uppercase=bad)
+||/ Name           Version        Description
++++-==============-==============-============================================
+ii  adduser        3.47           Add and remove users and groups
+ii  apt            0.5.4          Advanced front-end for dpkg
+ii  apt-utils      0.5.4          APT utility programs
+ii  at             3.1.8-11       Delayed job execution and batch processing
+ii  base-config    1.33.18        Debian base configuration package
+ii  base-files     3.0.2          Debian base system miscellaneous files
+ii  base-passwd    3.4.1          Debian Base System Password/Group Files
+ii  bash           2.05a-11       The GNU Bourne Again SHell
+ii  bsdmainutils   5.20020211-4.9 More utilities from FreeBSD.
+ii  bsdutils       2.11n-7woody1  Basic utilities from 4.4BSD-Lite.
+ii  console-common 0.7.14         Basic infrastructure for text console config
+ii  console-data   1999.08.29-24. Keymaps, fonts, charset maps, fallback table
+ii  console-tools  0.2.3-23.3     Linux console and font utilities.
+ii  console-tools- 0.2.3-23.3     Shared libraries for Linux console and font 
+ii  cpio           2.4.2-39woody2 GNU cpio -- a program to manage archives of 
+ii  cron           3.0pl1-72      management of regular background processing
+ii  debconf        1.0.32         Debian configuration management system
+ii  debianutils    1.16.2woody1   Miscellaneous utilities specific to Debian.
+ii  dhcp-client    2.0pl5-11woody DHCP Client
+ii  diff           2.7-29         File comparison utilities
+ii  dpkg           1.9.21         Package maintenance system for Debian
+ii  e2fsprogs      1.27-2         The EXT2 file system utilities and libraries
+ii  ed             0.2-19         The classic unix line editor
+ii  exim           3.35-1woody4   An MTA (Mail Transport Agent)
+ii  fdutils        5.3-7          Linux floppy utilities
+ii  fileutils      4.1-10         GNU file management utilities
+ii  findutils      4.1.7-2        utilities for finding files--find, xargs, an
+ii  gettext-base   0.10.40-5      GNU Internationalization utilities for the b
+ii  grep           2.4.2-3        GNU grep, egrep and fgrep.
+ii  groff-base     1.17.2-15.wood GNU troff text-formatting system (base syste
+ii  gzip           1.3.2-3woody5  The GNU compression utility.
+ii  hostname       2.09           A utility to set/show the host name or domai
+ii  ifupdown       0.6.4-4        High level tools to configure network interf
+ii  info           4.1-2          Standalone GNU Info documentation browser
+ii  ipchains       1.3.10-15      Network firewalling for Linux 2.2.x
+ii  iptables       1.2.6a-5.0wood IP packet filter administration tools for 2.
+ii  klogd          1.4.1-10       Kernel Logging Daemon
+ii  libc6          2.2.5-11.8     GNU C Library: Shared libraries and Timezone
+ii  libcap1        1.10-12        support for getting/setting POSIX.1e capabil
+ii  libdb2         2.7.7.0-7      The Berkeley database routines (run-time fil
+ii  libdb3         3.2.9-16       Berkeley v3 Database Libraries [runtime]
+ii  libident       0.22-2         simple RFC1413 client library - runtime
+ii  libldap2       2.0.23-6.3     OpenLDAP libraries.
+ii  liblockfile1   1.03           NFS-safe locking library, includes dotlockfi
+ii  libncurses5    5.2.20020112a- Shared libraries for terminal handling
+ii  libnewt0       0.50.17-9.6    Not Erik's Windowing Toolkit - text mode win
+ii  libpam-modules 0.72-35        Pluggable Authentication Modules for PAM
+ii  libpam-runtime 0.72-35        Runtime support for the PAM library
+ii  libpam0g       0.72-35        Pluggable Authentication Modules library
+ii  libpcap0       0.6.2-2        System interface for user-level packet captu
+ii  libpcre3       3.4-1.1woody1  Philip Hazel's Perl Compatible Regular Expre
+ii  libpopt0       1.6.2-7        lib for parsing cmdline parameters
+ii  libreadline4   4.2a-5         GNU readline and history libraries, run-time
+ii  libsasl7       1.5.27-3.1wood Authentication abstraction library.
+ii  libstdc++2.10- 2.95.4-11woody The GNU stdc++ library
+ii  libwrap0       7.6-9          Wietse Venema's TCP wrappers library
+ii  lilo           22.2-3         LInux LOader - The Classic OS loader can loa
+ii  login          20000902-12woo System login tools
+ii  logrotate      3.5.9-8        Log rotation utility
+ii  mailx          8.1.2-0.200204 A simple mail user agent.
+ii  makedev        2.3.1-58       Creates device files in /dev.
+ii  man-db         2.3.20-18.wood The on-line manual pager
+ii  manpages       1.39-1.1       Man pages about using a Linux system.
+ii  mawk           1.3.3-8        a pattern scanning and text processing langu
+ii  mbr            1.1.5-1        Master Boot Record for IBM-PC compatible com
+ii  modconf        0.2.43         Device Driver Configuration
+ii  modutils       2.4.15-1       Linux module utilities.
+ii  mount          2.11n-7woody1  Tools for mounting and manipulating filesyst
+ii  nano           1.0.6-3        free Pico clone with some new features
+ii  ncurses-base   5.2.20020112a- Descriptions of common terminal types
+ii  ncurses-bin    5.2.20020112a- Terminal-related programs and man pages
+ii  net-tools      1.60-4         The NET-3 networking toolkit
+ii  netbase        4.07           Basic TCP/IP networking system
+ii  netkit-inetd   0.10-9         The Internet Superserver
+ii  netkit-ping    0.10-9         The ping utility from netkit
+ii  nvi            1.79-20        4.4BSD re-implementation of vi.
+ii  passwd         20000902-12woo Change and administer password and group dat
+ii  pciutils       2.1.9-4        Linux PCI Utilities (for 2.[1234].x kernels)
+ii  pcmcia-cs      3.1.33-6woody1 PCMCIA Card Services for Linux.
+ii  perl-base      5.6.1-8.9      The Pathologically Eclectic Rubbish Lister.
+ii  ppp            2.4.1.uus-4    Point-to-Point Protocol (PPP) daemon.
+ii  pppconfig      2.0.14         A text menu based utility for configuring pp
+ii  pppoe          3.3-1.2        PPP over Ethernet driver
+ii  pppoeconf      0.9.10.6       configures PPPoE/ADSL
+ii  procps         2.0.7-8.woody1 The /proc file system utilities.
+ii  psmisc         20.2-2.1       Utilities that use the proc filesystem
+ii  sed            3.02-8         The GNU sed stream editor.
+ii  setserial      2.17-24        Controls configuration of serial ports.
+ii  shellutils     2.0.11-11      The GNU shell programming utilities.
+ii  slang1         1.4.4-7.2      The S-Lang programming library - runtime ver
+ii  sysklogd       1.4.1-10       System Logging Daemon
+ii  syslinux       1.66-1         Bootloader for Linux/i386 using MS-DOS flopp
+ii  sysvinit       2.84-2woody1   System-V like init.
+ii  tar            1.13.25-2      GNU tar
+ii  tasksel        1.18           Tool for selecting tasks for installation on
+ii  tcpd           7.6-9          Wietse Venema's TCP wrapper utilities
+ii  telnet         0.17-18woody3  The telnet client.
+ii  textutils      2.0-12         The GNU text file processing utilities.
+ii  util-linux     2.11n-7woody1  Miscellaneous system utilities.
+ii  whiptail       0.50.17-9.6    Displays user-friendly dialog boxes from she

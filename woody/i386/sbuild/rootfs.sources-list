@@ -1,0 +1,6 @@
+# deb http://snapshot.debian.org/archive/debian-archive/20090803T000000Z/debian woody main
+deb http://archive.debian.org/debian woody main
+deb-src http://archive.debian.org/debian woody main
+# deb http://snapshot.debian.org/archive/debian-archive/20090803T000000Z/debian-security woody/updates main
+deb http://archive.debian.org/debian-security woody/updates main
+deb-src http://archive.debian.org/debian-security woody/updates main
