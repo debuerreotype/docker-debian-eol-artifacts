@@ -1,0 +1,6 @@
+# deb http://snapshot.debian.org/archive/debian-archive/20090803T000000Z/debian sarge main
+deb http://archive.debian.org/debian sarge main
+deb-src http://archive.debian.org/debian sarge main
+# deb http://snapshot.debian.org/archive/debian-archive/20090803T000000Z/debian-security sarge/updates main
+deb http://archive.debian.org/debian-security sarge/updates main
+deb-src http://archive.debian.org/debian-security sarge/updates main
