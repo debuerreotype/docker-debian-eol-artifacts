@@ -1,0 +1,2 @@
+# deb http://snapshot.debian.org/archive/debian-archive/20090803T000000Z/debian slink main
+deb http://archive.debian.org/debian slink main
