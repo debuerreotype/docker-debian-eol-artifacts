@@ -1,0 +1,2 @@
+deb http://snapshot.debian.org/archive/debian-archive/20110128T000000Z/debian etch main
+deb http://snapshot.debian.org/archive/debian-archive/20110128T000000Z/debian-security etch/updates main
