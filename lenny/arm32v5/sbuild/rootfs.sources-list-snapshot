@@ -1,0 +1,2 @@
+deb http://snapshot.debian.org/archive/debian-archive/20120329T000000Z/debian lenny main
+deb http://snapshot.debian.org/archive/debian-archive/20120329T000000Z/debian-security lenny/updates main
