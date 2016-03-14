@@ -1,0 +1,6 @@
+# deb http://snapshot.debian.org/archive/debian-archive/20160314T000000Z/debian squeeze main
+deb http://archive.debian.org/debian squeeze main
+# deb http://snapshot.debian.org/archive/debian-archive/20160314T000000Z/debian-security squeeze/updates main
+deb http://archive.debian.org/debian-security squeeze/updates main
+# deb http://snapshot.debian.org/archive/debian-archive/20160314T000000Z/debian squeeze-lts main
+deb http://archive.debian.org/debian squeeze-lts main
