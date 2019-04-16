@@ -1,0 +1,13 @@
+# https://snapshot.debian.org/archive/debian-archive/now/debian-security/dists/
+# https://snapshot.debian.org/archive/debian-archive/now/debian/dists/
+# https://snapshot.debian.org/archive/debian-security/now/dists/
+# http://archive.debian.org/
+
+# suite  timestamp
+potato   2009-08-03T00:00:00Z # 2.2
+woody    2009-08-03T00:00:00Z # 3.0
+sarge    2009-08-03T00:00:00Z # 3.1
+etch     2011-01-28T00:00:00Z # 4.0
+lenny    2012-03-29T00:00:00Z # 5.0
+squeeze  2016-03-14T00:00:00Z # 6.0
+wheezy   2019-04-01T00:00:00Z # 7.0
