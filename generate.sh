@@ -77,5 +77,14 @@ for arch in $arches; do
 	mv -T "$out/"*"/$arch/$suite" "$target"
 	rm -rf "$out"
 
+	for dir in "$target" "$target/slim" "$target/sbuild"; do
+		[ -s "$dir/rootfs.tar.xz" ]
+		cat > "$dir/Dockerfile" <<-'EOF'
+			FROM scratch
+			ADD rootfs.tar.xz /
+			CMD ["bash"]
+		EOF
+	done
+
 	echo "$bashbrewArch" >> "$suite/arches"
 done
