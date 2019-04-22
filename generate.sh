@@ -15,7 +15,7 @@ _read_file() {
 	local array="$1"; shift
 	local dataArray="$1"; shift
 
-	local -
+	local restoreSet="$(set +o); set -$-"
 	# disable file globbing
 	set -f
 
@@ -35,6 +35,8 @@ _read_file() {
 			eval "$dataArray[${key}_$i]=$(printf '%q' "${lineData[$i]}")"
 		done
 	done
+
+	eval "$restoreSet"
 }
 
 _read_file arches dpkgArches dpkgArchData
@@ -72,7 +74,7 @@ for arch in $arches; do
 	# TODO put temporary "output" elsewhere? (mktemp -d?)
 	out="output-$suite-$arch"
 	rm -rf "$out"
-	"$DEBUERREOTYPE_DIRECTORY/build.sh" --eol --arch "$arch" "$out" "$suite" "$timestamp"
+	"$DEBUERREOTYPE_DIRECTORY/build.sh" --eol --arch "$arch" --qemu "$out" "$suite" "$timestamp"
 	mkdir -p "$(dirname "$target")"
 	mv -T "$out/"*"/$arch/$suite" "$target"
 	rm -rf "$out"
