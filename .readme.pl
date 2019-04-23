@@ -21,7 +21,7 @@ This repository contains tags for [Debian releases](https://www.debian.org/relea
 
 Blurbs about each release listed below are from [the `debian-history` package](https://packages.debian.org/sid/debian-history), whose content [is also available online](https://www.debian.org/doc/manuals/project-history/ch-releases.en.html).
 
-Image contents are generated reproducibly via [the `debuerreotype` tool](https://github.com/debuerreotype/debuerreotype) (also used for [the `debian` official image](https://hub.docker.com/_/debian)), and the exact scripts and rootfs tarballs can be found in [github.com/debuerreotype/docker-debian-eol-artifacts](https://github.com/debuerreotype/docker-debian-eol-artifacts).
+Image contents are generated reproducibly via [the `debuerreotype` tool](https://github.com/debuerreotype/debuerreotype) (also used for [the `debian` official image](https://hub.docker.com/_/debian)), and the exact scripts and rootfs tarballs can be found in [github.com/debuerreotype/docker-debian-eol-artifacts](https://github.com/debuerreotype/docker-debian-eol-artifacts) (see especially the `dist-*` branches, such as [`dist-potato`'s `potato` directory](https://github.com/debuerreotype/docker-debian-eol-artifacts/tree/dist-potato/potato)).
 EOH
 
 sub _para_to_markdown {
