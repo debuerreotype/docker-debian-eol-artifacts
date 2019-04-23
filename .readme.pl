@@ -20,6 +20,8 @@ print <<'EOH';
 This repository contains tags for [Debian releases](https://www.debian.org/releases/) which are [now End of Life](https://wiki.debian.org/DebianReleases#Production_Releases), and thus are available from [archive.debian.org](http://archive.debian.org).
 
 Blurbs about each release listed below are from [the `debian-history` package](https://packages.debian.org/sid/debian-history), whose content [is also available online](https://www.debian.org/doc/manuals/project-history/ch-releases.en.html).
+
+Image contents are generated reproducibly via [the `debuerreotype` tool](https://github.com/debuerreotype/debuerreotype) (also used for [the `debian` official image](https://hub.docker.com/_/debian)), and the exact scripts and rootfs tarballs can be found in [github.com/debuerreotype/docker-debian-eol-artifacts](https://github.com/debuerreotype/docker-debian-eol-artifacts).
 EOH
 
 sub _para_to_markdown {
