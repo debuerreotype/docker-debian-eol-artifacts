@@ -18,8 +18,8 @@ _arch_to_go_arch() {
 }
 _arch_to_variant() {
 	case "$1" in
-		arm32v*) echo "${1#arm32v}" ;;
-		arm64v*) echo "${1#arm64v}" ;;
+		arm32v*) echo "${1#arm32}" ;;
+		arm64v*) echo "${1#arm64}" ;;
 	esac
 }
 _arch_to_platform() {
