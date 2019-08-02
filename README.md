@@ -6,6 +6,14 @@ Blurbs about each release listed below are from [the `debian-history` package](h
 
 Image contents are generated reproducibly via [the `debuerreotype` tool](https://github.com/debuerreotype/debuerreotype) (also used for [the `debian` official image](https://hub.docker.com/_/debian)), and the exact scripts and rootfs tarballs can be found in [github.com/debuerreotype/docker-debian-eol-artifacts](https://github.com/debuerreotype/docker-debian-eol-artifacts) (see especially the `dist-*` branches, such as [`dist-potato`'s `potato` directory](https://github.com/debuerreotype/docker-debian-eol-artifacts/tree/dist-potato/potato)).
 
+## `debian/eol:jessie`
+
+> Debian 8 *Jessie* (April 2015): named for the cow girl doll who first appeared in Toy Story 2.
+>
+> This release introduced for the first time the systemd init system as default. Two new architectures were introduced: arm64 and ppc64el and three architectures were dropped: s390 (replaced by s390x), ia64 and sparc.  The Sparc architecture had been present in Debian for 16 years, but lacked developer support to make it maintenable in the distribution.
+>
+> The release included many security improvements such as a new kernel that nullified a whole set of security vulnerabilities (symlink attacks), a new way to detect packages which were under security support, more packages built with hardened compiler flags and a new mecahnism (needrestart) to detect sub-systems which had to be restarted in order to propagate security updates after an upgrade.
+
 ## `debian/eol:wheezy`
 
 > Debian 7.0 *Wheezy* (May 2013): named for the rubber toy penguin with a red bow tie.
