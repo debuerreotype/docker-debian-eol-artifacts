@@ -1,0 +1,6 @@
+# deb http://snapshot.debian.org/archive/debian-archive/20200706T000000Z/debian jessie main
+deb http://archive.debian.org/debian jessie main
+# deb http://snapshot.debian.org/archive/debian-security/20200706T000000Z jessie/updates main
+deb http://archive.debian.org/debian-security jessie/updates main
+# deb http://snapshot.debian.org/archive/debian/20200706T000000Z jessie-updates main
+deb http://archive.debian.org/debian jessie-updates main
