@@ -44,10 +44,9 @@ _read_file suites suites suiteData
 
 suite="${1:?'missing "suite" argument'}" || { usage >&2; exit 1; }
 timestamp="${suiteData[${suite}_1]}"
-snapshotUrl="$("$DEBUERREOTYPE_DIRECTORY/scripts/.snapshot-url.sh" "$timestamp" 'debian')"
 arches="$(
 	# for EOL releases, we don't really care so much about security support, so grab the full list of suite architectures
-	{ wget -qO- "http://archive.debian.org/debian/dists/$suite/Release" || wget -qO- "$snapshotUrl/dists/$suite/Release"; } \
+	wget -qO- "http://archive.debian.org/debian/dists/$suite/Release" \
 		| awk -F ': ' '$1 == "Architectures" { print $2 }'
 )"
 
