@@ -10,9 +10,9 @@ Image contents are generated reproducibly via [the `debuerreotype` tool](https:/
 
 > Debian 8 *Jessie* (April 2015): named for the cow girl doll who first appeared in Toy Story 2.
 >
-> This release introduced for the first time the systemd init system as default. Two new architectures were introduced: arm64 and ppc64el and three architectures were dropped: s390 (replaced by s390x), ia64 and sparc.  The Sparc architecture had been present in Debian for 16 years, but lacked developer support to make it maintenable in the distribution.
+> This release introduced for the first time the systemd init system as default. Two new architectures were introduced: arm64 and ppc64el and three architectures were dropped: s390 (replaced by s390x), ia64 and sparc.  The Sparc architecture had been present in Debian for 16 years, but lacked developer support to make it maintainable in the distribution.
 >
-> The release included many security improvements such as a new kernel that nullified a whole set of security vulnerabilities (symlink attacks), a new way to detect packages which were under security support, more packages built with hardened compiler flags and a new mecahnism (needrestart) to detect sub-systems which had to be restarted in order to propagate security updates after an upgrade.
+> The release included many security improvements such as a new kernel that nullified a whole set of security vulnerabilities (symlink attacks), a new way to detect packages which were under security support, more packages built with hardened compiler flags and a new mechanism (needrestart) to detect sub-systems which had to be restarted in order to propagate security updates after an upgrade.
 
 ## `debian/eol:wheezy`
 
@@ -48,7 +48,7 @@ Image contents are generated reproducibly via [the `debuerreotype` tool](https:/
 
 ## `debian/eol:sarge`
 
-> Debian 3.1 *Sarge* (6 June 2005): named for the sergeant of the Green Plastic Army Men.  No new architectures were added to the release, although an unofficial AMD64 port was published at the same time and distributed through the new [Alioth project hosting site](https://alioth.debian.org).  This release features a new installer: *debian-installer*, a modular piece of software that feature automatic hardware detection, unattended installation features and was released fully translated to over thirty languages.  It was also the first release to include a full office suite: OpenOffice.org.  Branden Robinson had just been appointed as Project Leader.  This release was made by more than nine hundred Debian developers, and contained around 15,400 binary packages and 14 binary CDs in the official set.
+> Debian 3.1 *Sarge* (6 June 2005): named for the sergeant of the Green Plastic Army Men.  No new architectures were added to the release, although an unofficial AMD64 port was published at the same time and distributed through the new Alioth project hosting site.  This release features a new installer: *debian-installer*, a modular piece of software that feature automatic hardware detection, unattended installation features and was released fully translated to over thirty languages.  It was also the first release to include a full office suite: OpenOffice.org.  Branden Robinson had just been appointed as Project Leader.  This release was made by more than nine hundred Debian developers, and contained around 15,400 binary packages and 14 binary CDs in the official set.
 
 ## `debian/eol:woody`
 
