@@ -6,6 +6,14 @@ Blurbs about each release listed below are from [the `debian-history` package](h
 
 Image contents are generated reproducibly via [the `debuerreotype` tool](https://github.com/debuerreotype/debuerreotype) (also used for [the `debian` official image](https://hub.docker.com/_/debian)), and the exact scripts and rootfs tarballs can be found in [github.com/debuerreotype/docker-debian-eol-artifacts](https://github.com/debuerreotype/docker-debian-eol-artifacts) (see especially the `dist-*` branches, such as [`dist-potato`'s `potato` directory](https://github.com/debuerreotype/docker-debian-eol-artifacts/tree/dist-potato/potato)).
 
+## `debian/eol:stretch`
+
+> Debian 9 *Stretch* (June 2017): named for the toy rubber octopus with suckers on her eight long arms that appeared in Toy Story 3.
+>
+> The release was frozen on February 7th, 2017.
+>
+> Support for the powerpc architecture was dropped in this release, whileas the mips64el architecture was introduced.  This release introduced debug packages with a new repository in the archive, packages from this repository provided debug symbols automatically for packages.
+
 ## `debian/eol:jessie`
 
 > Debian 8 *Jessie* (April 2015): named for the cow girl doll who first appeared in Toy Story 2.
