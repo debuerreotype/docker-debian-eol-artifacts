@@ -6,16 +6,16 @@ usage() {
 	printf '   ie: DEBUERREOTYPE_DIRECTORY=... %q lenny\n' "$0"
 }
 
-: "${DEBUERREOTYPE_DIRECTORY:?'missing; should be set to the location of a debuerreotype repository checkout for "build.sh"'}"
-buildSh="$DEBUERREOTYPE_DIRECTORY/build.sh"
-{ [ -s "$buildSh" ] && [ -x "$buildSh" ]; } || { usage >&2; exit 1; }
+: "${DEBUERREOTYPE_DIRECTORY:?'missing; should be set to the location of a debuerreotype repository checkout for "docker-run.sh"'}"
+dockerRun="$DEBUERREOTYPE_DIRECTORY/docker-run.sh"
+{ [ -s "$dockerRun" ] && [ -x "$dockerRun" ]; } || { usage >&2; exit 1; }
 
 _read_file() {
 	local file="$1"; shift
 	local array="$1"; shift
 	local dataArray="$1"; shift
 
-	local restoreSet="$(set +o); set -$-"
+	local -
 	# disable file globbing
 	set -f
 
@@ -35,8 +35,6 @@ _read_file() {
 			eval "$dataArray[${key}_$i]=$(printf '%q' "${lineData[$i]}")"
 		done
 	done
-
-	eval "$restoreSet"
 }
 
 _read_file arches dpkgArches dpkgArchData
@@ -44,10 +42,19 @@ _read_file suites suites suiteData
 
 suite="${1:?'missing "suite" argument'}" || { usage >&2; exit 1; }
 timestamp="${suiteData[${suite}_1]}"
+
+mirrors="$("$DEBUERREOTYPE_DIRECTORY/scripts/.debian-mirror.sh" --eol "$timestamp" "$suite" 'amd64' 'main')"
+eval "$mirrors"
+[ -n "$snapshotMirror" ]
+
+release="$(
+	wget --quiet --output-document=- "$snapshotMirror/dists/$suite/InRelease" \
+		|| wget --quiet --output-document=- "$snapshotMirror/dists/$suite/Release"
+)"
+
 arches="$(
 	# for EOL releases, we don't really care so much about security support, so grab the full list of suite architectures
-	wget -qO- "http://archive.debian.org/debian/dists/$suite/Release" \
-		| awk -F ': ' '$1 == "Architectures" { print $2 }'
+	awk -F ': ' '$1 == "Architectures" { print $2 }' <<<"$release"
 )"
 
 _intersection() {
@@ -74,12 +81,13 @@ for arch in $arches; do
 	# TODO put temporary "output" elsewhere? (mktemp -d?)
 	out="output-$suite-$arch"
 	rm -rf "$out"
-	"$DEBUERREOTYPE_DIRECTORY/build.sh" --eol --arch "$arch" --qemu "$out" "$suite" "$timestamp"
+	mkdir "$out"
+	"$dockerRun" /opt/debuerreotype/examples/debian.sh --eol --arch "$arch" "$out" "$suite" "$timestamp"
 	mkdir -p "$(dirname "$target")"
 	mv -T "$out/"*"/$arch/$suite" "$target"
 	rm -rf "$out"
 
-	for dir in "$target" "$target/slim" "$target/sbuild"; do
+	for dir in "$target" "$target/slim"; do
 		[ -s "$dir/rootfs.tar.xz" ]
 		cat > "$dir/Dockerfile" <<-'EOF'
 			FROM scratch
