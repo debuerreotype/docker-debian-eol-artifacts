@@ -4,6 +4,7 @@
 # http://archive.debian.org/
 
 # suite  timestamp
+slink    2009-08-03T00:00:00Z # 2.1
 potato   2009-08-03T00:00:00Z # 2.2
 woody    2009-08-03T00:00:00Z # 3.0
 sarge    2009-08-03T00:00:00Z # 3.1
