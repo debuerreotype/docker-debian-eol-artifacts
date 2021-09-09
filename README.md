@@ -67,3 +67,7 @@ Issues? https://github.com/debuerreotype/docker-debian-eol-artifacts/issues
 ## `debian/eol:potato`
 
 > Debian 2.2 *Potato* (15 August 2000): Named for "Mr Potato Head" in the *Toy Story* movies.  This release added support for the [PowerPC](http://www.debian.org/ports/powerpc/) and [ARM](http://www.debian.org/ports/arm/) architectures.  With Wichert still serving as Project Leader, this release consisted of more than 3900 binary packages derived from over 2600 source packages maintained by more than 450 Debian developers.
+
+## `debian/eol:slink`
+
+> Debian 2.1 *Slink* (March 9th, 1999): Named for the slinky-dog in the movie.  Two more architectures were added, [Alpha](http://www.debian.org/ports/alpha/) and [SPARC](http://www.debian.org/ports/sparc/).  With Wichert Akkerman as Project Leader, this release consisted of about 2250 packages and required 2 CDs in the official set.  The key technical innovation was the introduction of apt, a new package management interface.  Widely emulated, apt addressed issues resulting from Debian's continuing growth, and established a new paradigm for package acquisition and installation on Open Source operating systems.
