@@ -43,19 +43,30 @@ _read_file suites suites suiteData
 suite="${1:?'missing "suite" argument'}" || { usage >&2; exit 1; }
 timestamp="${suiteData[${suite}_1]}"
 
-mirrors="$("$DEBUERREOTYPE_DIRECTORY/scripts/.debian-mirror.sh" --eol "$timestamp" "$suite" 'amd64' 'main')"
+if ! mirrors="$("$DEBUERREOTYPE_DIRECTORY/scripts/.debian-mirror.sh" --eol "$timestamp" "$suite" 'amd64' 'main')"; then
+	mirrors="$("$DEBUERREOTYPE_DIRECTORY/scripts/.debian-mirror.sh" --eol "$timestamp" "$suite" 'i386' 'main')"
+fi
 eval "$mirrors"
 [ -n "$snapshotMirror" ]
 
-release="$(
-	wget --quiet --output-document=- "$snapshotMirror/dists/$suite/InRelease" \
-		|| wget --quiet --output-document=- "$snapshotMirror/dists/$suite/Release"
-)"
+case "$suite" in
+	slink) # 2.1 -- predates Release files 😬
+		# http://archive.debian.org/debian/dists/slink/main/
+		arches='alpha i386 m68k sparc'
+		;;
 
-arches="$(
-	# for EOL releases, we don't really care so much about security support, so grab the full list of suite architectures
-	awk -F ': ' '$1 == "Architectures" { print $2 }' <<<"$release"
-)"
+	*)
+		release="$(
+			wget --quiet --output-document=- "$snapshotMirror/dists/$suite/InRelease" \
+				|| wget --quiet --output-document=- "$snapshotMirror/dists/$suite/Release"
+		)"
+
+		arches="$(
+			# for EOL releases, we don't really care so much about security support, so grab the full list of suite architectures
+			awk -F ': ' '$1 == "Architectures" { print $2 }' <<<"$release"
+		)"
+		;;
+esac
 
 _intersection() {
 	local set1="$1"; shift
