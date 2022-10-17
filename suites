@@ -13,8 +13,6 @@ lenny    2012-03-29T00:00:00Z # 5.0
 squeeze  2016-03-14T00:00:00Z # 6.0
 wheezy   2019-04-01T00:00:00Z # 7.0
 jessie   2020-07-02T00:00:00Z # 8
-
-# TODO once stretch LTS ends (and the bits get to snapshot), bump this accordingly
-stretch  2020-07-17T00:00:00Z # 9
+stretch  2022-07-02T00:00:00Z # 9
 
 # sed -r 's/[[:space:]]*#.*$//' suites | grep -vE '^$'
