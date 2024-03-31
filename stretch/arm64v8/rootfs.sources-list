@@ -1,0 +1,4 @@
+# deb http://snapshot.debian.org/archive/debian-archive/20240331T102506Z/debian stretch main
+deb http://archive.debian.org/debian stretch main
+# deb http://snapshot.debian.org/archive/debian-archive/20240331T102506Z/debian-security stretch/updates main
+deb http://archive.debian.org/debian-security stretch/updates main
