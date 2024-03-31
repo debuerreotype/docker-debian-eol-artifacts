@@ -1,0 +1,8 @@
+amd64
+arm64v8
+arm32v5
+arm32v7
+i386
+mips64le
+ppc64le
+s390x

@@ -1,0 +1,6 @@
+# deb http://snapshot.debian.org/archive/debian-archive/20240331T102506Z/debian buster main
+deb http://archive.debian.org/debian buster main
+# deb http://snapshot.debian.org/archive/debian-security/20240331T102506Z buster/updates main
+deb http://deb.debian.org/debian-security buster/updates main
+# deb http://snapshot.debian.org/archive/debian-archive/20240331T102506Z/debian buster-updates main
+deb http://archive.debian.org/debian buster-updates main
