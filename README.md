@@ -14,7 +14,11 @@ Issues? https://github.com/debuerreotype/docker-debian-eol-artifacts/issues
 >
 > The release was frozen on February 7th, 2017.
 >
-> Support for the powerpc architecture was dropped in this release, whileas the mips64el architecture was introduced.  This release introduced debug packages with a new repository in the archive, packages from this repository provided debug symbols automatically for packages.
+> Debian 9 was dedicated to the project's founder Ian Murdock, who passed away on 28 December 2015.
+>
+> Support for the powerpc architecture was dropped in this release, whileas the mips64el architecture was introduced. This release introduced debug packages with a new repository in the archive, packages from this repository provided debug symbols automatically for packages. Firefox and Thunderbird returned to Debian, replacing their debranded versions Iceweasel and Icedove, which were present in the archive for more than 10 years. Thanks to the Reproducible Builds project, over 90% of the source packages included in Debian 9 were able to build bit-for-bit identical binary packages.
+>
+> Debian 9 had Long Term Support (LTS) for i386, amd64, armel and armhf architectures until the end of June 2022.
 
 ## `debian/eol:jessie`
 
@@ -23,6 +27,8 @@ Issues? https://github.com/debuerreotype/docker-debian-eol-artifacts/issues
 > This release introduced for the first time the systemd init system as default. Two new architectures were introduced: arm64 and ppc64el and three architectures were dropped: s390 (replaced by s390x), ia64 and sparc.  The Sparc architecture had been present in Debian for 16 years, but lacked developer support to make it maintainable in the distribution.
 >
 > The release included many security improvements such as a new kernel that nullified a whole set of security vulnerabilities (symlink attacks), a new way to detect packages which were under security support, more packages built with hardened compiler flags and a new mechanism (needrestart) to detect sub-systems which had to be restarted in order to propagate security updates after an upgrade.
+>
+> Debian 8 had Long Term Support (LTS) for i386, amd64, armel and armhf architectures until the end of June 2020.
 
 ## `debian/eol:wheezy`
 
@@ -71,3 +77,19 @@ Issues? https://github.com/debuerreotype/docker-debian-eol-artifacts/issues
 ## `debian/eol:slink`
 
 > Debian 2.1 *Slink* (March 9th, 1999): Named for the slinky-dog in the movie.  Two more architectures were added, [Alpha](http://www.debian.org/ports/alpha/) and [SPARC](http://www.debian.org/ports/sparc/).  With Wichert Akkerman as Project Leader, this release consisted of about 2250 packages and required 2 CDs in the official set.  The key technical innovation was the introduction of apt, a new package management interface.  Widely emulated, apt addressed issues resulting from Debian's continuing growth, and established a new paradigm for package acquisition and installation on Open Source operating systems.
+
+## `debian/eol:hamm`
+
+> Debian 2.0 *Hamm* (July 24th, 1998): Named for the piggy-bank in the *Toy Story* movies.  This was the first multi-architecture release of Debian, adding support for the Motorola 68000 series architectures.  With Ian Jackson as Project Leader, this release made the transition to libc6, and consisted of over 1500 packages maintained by over 400 developers.
+
+## `debian/eol:bo`
+
+> Debian 1.3 *Bo* (June 5th, 1997): Named for Bo Peep, the shepherdess.  This release consisted of 974 packages maintained by 200 developers.
+
+## `debian/eol:rex`
+
+> Debian 1.2 *Rex* (December 12th, 1996): Named for the plastic dinosaur in the *Toy Story* movies.  This release consisted of 848 packages maintained by 120 developers
+
+## `debian/eol:buzz`
+
+> Debian 1.1 *Buzz* (June 17th, 1996): This was the first Debian release with a code name.  It was taken, like all others so far, from a character in one of the *Toy Story* movies...  in this case, Buzz Lightyear.  By this time, Bruce Perens had taken over leadership of the Project from Ian Murdock, and Bruce was working at Pixar, the company that produced the movies.  This release was fully ELF, used Linux kernel 2.0, and contained 474 packages.

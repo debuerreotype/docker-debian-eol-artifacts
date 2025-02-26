@@ -5,14 +5,14 @@ use Mojo::UserAgent;
 
 my $ua = Mojo::UserAgent->new;
 
-# https://salsa.debian.org/ddp-team/project-history/blob/master/project-history.en.dbk (`<chapter id="releases">`)
-my $tx = $ua->get('https://salsa.debian.org/ddp-team/project-history/raw/master/project-history.en.dbk');
+# https://salsa.debian.org/publicity-team/debian-history/-/blob/master/project-history.en.dbk (`<chapter id="releases">`)
+my $tx = $ua->get('https://salsa.debian.org/publicity-team/debian-history/-/raw/master/project-history.en.dbk');
 die $tx->error if $tx->error;
 
 my $dom = $tx->res->dom->find('chapter#releases')->first;
 die 'missing "releases" chapter' unless $dom;
 
-my $match = qr!^\s*Debian\s+[0-9.]+\s+!s;
+my $match = qr!^\s*Debian\s+([0-9.]+)\s+!s;
 
 print <<'EOH';
 # Debian EOL
@@ -33,6 +33,8 @@ sub _para_to_markdown {
 
 	$el->find('ulink')->each(sub { $_->replace('[' . $_->content . '](' . $_->attr('url') . ')') });
 
+	$el->find('footnote')->map('remove');
+
 	my $children = $el->children;
 	if (@$children) {
 		die "missed children:\n" . $children->map('to_string')->join("\n");
@@ -46,12 +48,14 @@ sub _para_to_markdown {
 }
 
 for my $suite (@ARGV) {
-	my $el = $dom->find('para')->first(sub { $_->content =~ m!$match<emphasis>\Q$suite\E</emphasis>\s+!is });
+	my $debianVersion;
+	my $el = $dom->find('para')->first(sub { ($debianVersion) = $_->content =~ m!$match<emphasis>\Q$suite\E</emphasis>\s+!is });
 	die "missing $suite" unless $el;
 	say "\n" . "## `debian/eol:$suite`";
 	say "\n> " . _para_to_markdown($el);
 	my $foundNext = 0;
-	$el->following('para')->grep(sub { !($foundNext ||= $_->content =~ $match) })->each(sub {
+	my $debianVersionMatch = qr!^\s*Debian\s+\Q$debianVersion\E\s+!s;
+	$el->following('para')->grep(sub { !($foundNext ||= ($_->content =~ $match and $_->content !~ $debianVersionMatch)) })->each(sub {
 		say ">\n> " . _para_to_markdown($_);
 	});
 }
