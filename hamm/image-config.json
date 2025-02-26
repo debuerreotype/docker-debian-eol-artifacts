@@ -1,0 +1,27 @@
+{
+	"config": {
+		"Cmd": [
+			"bash"
+		],
+		"Entrypoint": [],
+		"Env": [
+			"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+		]
+	},
+	"architecture": "386",
+	"created": "1998-07-21T00:48:37Z",
+	"history": [
+		{
+			"comment": "Debian 2.0 (Hamm) [i386]",
+			"created": "1998-07-21T00:48:37Z",
+			"created_by": "https://archive.debian.org/debian/dists/hamm/main/disks-i386/current/base2_0.tgz"
+		}
+	],
+	"os": "linux",
+	"rootfs": {
+		"diff_ids": [
+			"sha256:147676883a6b137aaef9e707e4c4e64da3deda172f63b3c518453cd1609d8346"
+		],
+		"type": "layers"
+	}
+}
