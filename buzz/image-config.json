@@ -1,0 +1,27 @@
+{
+	"config": {
+		"Cmd": [
+			"bash"
+		],
+		"Entrypoint": [],
+		"Env": [
+			"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+		]
+	},
+	"architecture": "386",
+	"created": "1996-06-16T17:59:34Z",
+	"history": [
+		{
+			"comment": "Debian 1.1 (Buzz) [i386]",
+			"created": "1996-06-16T17:59:34Z",
+			"created_by": "http://archive.debian.org/debian/dists/buzz/main/disks-i386/1996_6_16/base1_1.tgz"
+		}
+	],
+	"os": "linux",
+	"rootfs": {
+		"diff_ids": [
+			"sha256:811e2d6bd7b6faee085f75fe6fd6bbf99ad237b47e607b35051ff83547e2fb5a"
+		],
+		"type": "layers"
+	}
+}
