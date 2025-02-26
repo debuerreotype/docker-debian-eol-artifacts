@@ -1,0 +1,27 @@
+{
+	"config": {
+		"Cmd": [
+			"bash"
+		],
+		"Entrypoint": [],
+		"Env": [
+			"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+		]
+	},
+	"architecture": "386",
+	"created": "1996-12-09T02:10:11Z",
+	"history": [
+		{
+			"comment": "Debian 1.2 (Rex) [i386]",
+			"created": "1996-12-09T02:10:11Z",
+			"created_by": "http://archive.debian.org/debian/dists/rex/main/disks-i386/current/base1_2.tgz"
+		}
+	],
+	"os": "linux",
+	"rootfs": {
+		"diff_ids": [
+			"sha256:952365b70c66a07c70da950d448c9b886e594b6f328dfe5170c045d12a7613ef"
+		],
+		"type": "layers"
+	}
+}
