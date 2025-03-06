@@ -14,5 +14,6 @@ squeeze  2016-03-14T00:00:00Z # 6.0
 wheezy   2024-03-31T10:25:06Z # 7.0
 jessie   2024-03-31T10:25:06Z # 8
 stretch  2024-03-31T10:25:06Z # 9
+buster   2024-03-31T10:25:06Z # 10 # TODO redo this once the final LTS bits get into archive (and then snapshot of archive)
 
 # sed -r 's/[[:space:]]*#.*$//' suites | grep -vE '^$'

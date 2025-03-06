@@ -8,6 +8,14 @@ Image contents are generated reproducibly via [the `debuerreotype` tool](https:/
 
 Issues? https://github.com/debuerreotype/docker-debian-eol-artifacts/issues
 
+## `debian/eol:buster`
+
+> Debian 10 *Buster* (July 2019): named for Andy's pet dog, received as Christmas present in the end of Toy Story.
+>
+> With this release Debian for the first time included a mandatory access control framework enabled per default (AppArmor). It was also the first Debian release to ship with Rust based programs such as Firefox, ripgrep, fd, exa, etc. and a significant number of Rust based libraries (more than 450). In Debian 10 GNOME defaults to using the Wayland display server instead of Xorg, providing a simpler and more modern design and advantages for security. The UEFI ("Unified Extensible Firmware Interface") support first introduced in Debian 7 continued to be greatly improved in Debian 10, being included for amd64, i386 and arm64 architectures and working out of the box on most Secure Boot-enabled machines.
+>
+> Debian 10 has Long Term Support (LTS) for i386, amd64, armel and armhf architectures until the end of June 2024.
+
 ## `debian/eol:stretch`
 
 > Debian 9 *Stretch* (June 2017): named for the toy rubber octopus with suckers on her eight long arms that appeared in Toy Story 3.
