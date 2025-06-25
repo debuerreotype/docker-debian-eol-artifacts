@@ -1,0 +1,3 @@
+deb http://snapshot.debian.org/archive/debian-archive/20250625T172521Z/debian bullseye main
+deb http://snapshot.debian.org/archive/debian-security/20250625T172521Z bullseye-security main
+deb http://snapshot.debian.org/archive/debian-archive/20250625T172521Z/debian bullseye-updates main
