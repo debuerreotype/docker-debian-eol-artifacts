@@ -8,13 +8,23 @@ Image contents are generated reproducibly via [the `debuerreotype` tool](https:/
 
 Issues? https://github.com/debuerreotype/docker-debian-eol-artifacts/issues
 
+## `debian/eol:bullseye`
+
+> Debian 11 *Bullseye* (August 14th, 2021): named for Woody's wooden toyhorse that appeared in Toy Story 2.
+>
+> This release contained over 11,294 new packages for a total count of 59,551 packages, along with a significant reduction of over 9,519 packages which were marked as "obsolete" and removed. 42,821 packages were updated and 5,434 packages remained unchanged.
+>
+> Debian 11 allowed driverless printing and scanning without the need for vendor specific (often non-free) drivers, and shipped a Linux kernel with support for the exFAT filesystem. The mips architecture support was dropped, keeping support for mipsel (little-endian) architectures for 32-bit hardware and mips64el architecture for 64-bit little-endian hardware.
+>
+> The Debian Med team took part in the fight against COVID-19 by packaging software for researching the virus on the sequence level and for fighting the pandemic with the tools used in epidemiology; this work continued with focus on machine learning tools for both fields.
+
 ## `debian/eol:buster`
 
 > Debian 10 *Buster* (July 2019): named for Andy's pet dog, received as Christmas present in the end of Toy Story.
 >
 > With this release Debian for the first time included a mandatory access control framework enabled per default (AppArmor). It was also the first Debian release to ship with Rust based programs such as Firefox, ripgrep, fd, exa, etc. and a significant number of Rust based libraries (more than 450). In Debian 10 GNOME defaults to using the Wayland display server instead of Xorg, providing a simpler and more modern design and advantages for security. The UEFI ("Unified Extensible Firmware Interface") support first introduced in Debian 7 continued to be greatly improved in Debian 10, being included for amd64, i386 and arm64 architectures and working out of the box on most Secure Boot-enabled machines.
 >
-> Debian 10 has Long Term Support (LTS) for i386, amd64, armel and armhf architectures until the end of June 2024.
+> Debian 10 had Long Term Support (LTS) for i386, amd64, armel and armhf architectures until the end of June 2024.
 
 ## `debian/eol:stretch`
 
@@ -54,13 +64,13 @@ Issues? https://github.com/debuerreotype/docker-debian-eol-artifacts/issues
 >
 > The release was frozen on August 6, 2010, with many of the Debian developers gathered at the 10th DebConf at New York City.
 >
-> While two architectures (alpha and hppa) were dropped, two architectures of the new [FreeBSD port](http://www.debian.org/ports/kfreebsd-gnu/) (kfreebsd-i386 and kfreebsd-amd64) were made available as *technology preview*, including the kernel and userland tools as well as common server software (though not advanced desktop features yet).  This was the first time a Linux distribution has been extended to also allow use of a non-Linux kernel.
+> While two architectures (alpha and hppa) were dropped, two architectures of the new [FreeBSD port](https://www.debian.org/ports/kfreebsd-gnu/) (kfreebsd-i386 and kfreebsd-amd64) were made available as *technology preview*, including the kernel and userland tools as well as common server software (though not advanced desktop features yet).  This was the first time a Linux distribution has been extended to also allow use of a non-Linux kernel.
 >
 > The new release introduced a dependency based boot sequence, which allowed for parallel init script processing, speeding system startup.
 
 ## `debian/eol:lenny`
 
-> Debian 5.0 *Lenny* (February 2009): named for the wind up binoculars in the *Toy Story* movies.  One architecture was added in this release: [ARM EABI](https://wiki.debian.org/ArmEabiPort) (or *armel*), providing support for newer ARM processors and deprecating the old ARM port (*arm*).  The [m68k](https://wiki.debian.org/M68k) port was not included in this release, although it was still provided in the *unstable* distribution.  This release did not feature the [FreeBSD port](http://www.debian.org/ports/kfreebsd-gnu/), although much work on the port had been done to make it qualify it did not meet yet the [qualification requirements](https://release.debian.org/lenny/arch_qualify.html) for this release.
+> Debian 5.0 *Lenny* (February 2009): named for the wind up binoculars in the *Toy Story* movies.  One architecture was added in this release: [ARM EABI](https://wiki.debian.org/ArmEabiPort) (or *armel*), providing support for newer ARM processors and deprecating the old ARM port (*arm*).  The [m68k](https://wiki.debian.org/M68k) port was not included in this release, although it was still provided in the *unstable* distribution.  This release did not feature the [FreeBSD port](https://www.debian.org/ports/kfreebsd-gnu/), although much work on the port had been done to make it qualify it did not meet yet the [qualification requirements](https://release.debian.org/lenny/arch_qualify.html) for this release.
 >
 > Support of small factor devices in this release was increased by the added support for Marvell's Orion platform which was used in many storage devices and also provided supported several Netbooks.  Some new build tools were added which allowed Debian packages to be cross-built and shrunk for embedded ARM systems.  Also, netbooks of varied vendors were now supported and the distribution provided software more suitable for computers with relatively low performance.
 >
@@ -68,7 +78,7 @@ Issues? https://github.com/debuerreotype/docker-debian-eol-artifacts/issues
 
 ## `debian/eol:etch`
 
-> Debian 4.0 *Etch* (8 April 2007): named for the sketch toy in the movie.  One architecture was added in this release: [AMD64](http://www.debian.org/ports/amd64/), and official support for [m68k](http://www.debian.org/ports/m68k/) was dropped. This release continued using the *debian-installer*, but featuring in this release a graphical installer, cryptographic verification of downloaded packages, more flexible partitioning (with support for encrypted partitions), simplified mail configuration, a more flexible desktop selection, simplified but improved localization and new modes, including a *rescue* mode.  New installations would not need to reboot through the installation process as the previous two phases of installation were now integrated.  This new installer provided support for scripts using composed characters and complex languages in its graphical version, increasing the number of available translations to over fifty.  Sam Hocevar was appointed Project Leader the very same day, and the project included more than one thousand and thirty Debian developers.  The release contained around 18,000 binary packages over 20 binary CDs (3 DVDs) in the official set.  There were also two binary CDs available to install the system with alternate desktop environments different to the default one.
+> Debian 4.0 *Etch* (8 April 2007): named for the sketch toy in the movie.  One architecture was added in this release: [AMD64](https://www.debian.org/ports/amd64/), and official support for [m68k](https://www.debian.org/ports/m68k/) was dropped. This release continued using the *debian-installer*, but featuring in this release a graphical installer, cryptographic verification of downloaded packages, more flexible partitioning (with support for encrypted partitions), simplified mail configuration, a more flexible desktop selection, simplified but improved localization and new modes, including a *rescue* mode.  New installations would not need to reboot through the installation process as the previous two phases of installation were now integrated.  This new installer provided support for scripts using composed characters and complex languages in its graphical version, increasing the number of available translations to over fifty.  Sam Hocevar was appointed Project Leader the very same day, and the project included more than one thousand and thirty Debian developers.  The release contained around 18,000 binary packages over 20 binary CDs (3 DVDs) in the official set.  There were also two binary CDs available to install the system with alternate desktop environments different to the default one.
 
 ## `debian/eol:sarge`
 
@@ -76,15 +86,15 @@ Issues? https://github.com/debuerreotype/docker-debian-eol-artifacts/issues
 
 ## `debian/eol:woody`
 
-> Debian 3.0 *Woody* (19 July 2002): Named for the main character the *Toy Story* movies: "Woody" the cowboy.  Even more architectures were added in this release: [IA-64](http://www.debian.org/ports/ia64/), [HP PA-RISC](http://www.debian.org/ports/hppa/), [MIPS (big endian)](http://www.debian.org/ports/mips/), [MIPS (little endian)](http://www.debian.org/ports/mipsel/) and [S/390](http://www.debian.org/ports/s390/).  This is also the first release to include cryptographic software due to the restrictions for exportation being *lightened* in the US, and also the first one to include KDE, now that the license issues with QT were resolved.  With Bdale Garbee recently appointed Project Leader, and more than 900 Debian developers, this release contained around 8,500 binary packages and 7 binary CDs in the official set.
+> Debian 3.0 *Woody* (19 July 2002): Named for the main character the *Toy Story* movies: "Woody" the cowboy.  Even more architectures were added in this release: [IA-64](https://www.debian.org/ports/ia64/), [HP PA-RISC](https://www.debian.org/ports/hppa/), [MIPS (big endian)](https://www.debian.org/ports/mips/), [MIPS (little endian)](https://www.debian.org/ports/mipsel/) and [S/390](https://www.debian.org/ports/s390/).  This is also the first release to include cryptographic software due to the restrictions for exportation being *lightened* in the US, and also the first one to include KDE, now that the license issues with Qt were resolved.  With Bdale Garbee recently appointed Project Leader, and more than 900 Debian developers, this release contained around 8,500 binary packages and 7 binary CDs in the official set.
 
 ## `debian/eol:potato`
 
-> Debian 2.2 *Potato* (15 August 2000): Named for "Mr Potato Head" in the *Toy Story* movies.  This release added support for the [PowerPC](http://www.debian.org/ports/powerpc/) and [ARM](http://www.debian.org/ports/arm/) architectures.  With Wichert still serving as Project Leader, this release consisted of more than 3900 binary packages derived from over 2600 source packages maintained by more than 450 Debian developers.
+> Debian 2.2 *Potato* (15 August 2000): Named for "Mr Potato Head" in the *Toy Story* movies.  This release added support for the [PowerPC](https://www.debian.org/ports/powerpc/) and [ARM](https://www.debian.org/ports/arm/) architectures.  With Wichert still serving as Project Leader, this release consisted of more than 3900 binary packages derived from over 2600 source packages maintained by more than 450 Debian developers.
 
 ## `debian/eol:slink`
 
-> Debian 2.1 *Slink* (March 9th, 1999): Named for the slinky-dog in the movie.  Two more architectures were added, [Alpha](http://www.debian.org/ports/alpha/) and [SPARC](http://www.debian.org/ports/sparc/).  With Wichert Akkerman as Project Leader, this release consisted of about 2250 packages and required 2 CDs in the official set.  The key technical innovation was the introduction of apt, a new package management interface.  Widely emulated, apt addressed issues resulting from Debian's continuing growth, and established a new paradigm for package acquisition and installation on Open Source operating systems.
+> Debian 2.1 *Slink* (March 9th, 1999): Named for the slinky-dog in the movie.  Two more architectures were added, [Alpha](https://www.debian.org/ports/alpha/) and [SPARC](https://www.debian.org/ports/sparc/).  With Wichert Akkerman as Project Leader, this release consisted of about 2250 packages and required 2 CDs in the official set.  The key technical innovation was the introduction of apt, a new package management interface.  Widely emulated, apt addressed issues resulting from Debian's continuing growth, and established a new paradigm for package acquisition and installation on Open Source operating systems.
 
 ## `debian/eol:hamm`
 
