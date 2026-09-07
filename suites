@@ -15,6 +15,6 @@ wheezy   2024-03-31T10:25:06Z # 7.0
 jessie   2024-03-31T10:25:06Z # 8
 stretch  2024-03-31T10:25:06Z # 9
 buster   2025-06-25T17:25:21Z # 10
-bullseye 2025-06-25T17:25:21Z # 11 # TODO update this once bullseye is full non-LTS/EOL
+bullseye 2025-08-09T13:37:19Z # 11
 
 # sed -r 's/[[:space:]]*#.*$//' suites | grep -vE '^$'
